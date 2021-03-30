@@ -43,7 +43,7 @@ char	*ft_strdup(const char *s)
 }
 
 char	*ft_strnl(const char *s)
-{	
+{
 	if (s == 0)
 		return (NULL);
 	while (*s)

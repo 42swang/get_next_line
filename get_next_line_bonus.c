@@ -33,7 +33,7 @@ int	split_save(char **line, char **save)
 }
 
 int	read_file(int fd, char **line, char **save)
-{	
+{
 	ssize_t	read_size;
 	char	buf[BUFFER_SIZE + 1];
 	char	*temp;
@@ -62,7 +62,7 @@ int	read_file(int fd, char **line, char **save)
 }
 
 int	read_more(int fd, char **line, char **save)
-{	
+{
 	int		ret;
 	char	*temp;
 
@@ -76,7 +76,7 @@ int	read_more(int fd, char **line, char **save)
 	if (ret == -1 || ret == 1)
 		return (ret);
 	if (ret == 3)
-	{	
+	{
 		temp = *line;
 		*line = *save;
 		*save = 0;

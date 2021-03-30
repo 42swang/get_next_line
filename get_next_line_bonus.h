@@ -14,11 +14,8 @@
 # define GET_NEXT_LINE_BONUS_H
 
 # include <fcntl.h>
-# include <stdio.h>
 # include <stdlib.h>
 # include <unistd.h>
-
-# define OPEN_MAX 256
 
 size_t	ft_strlen(const char *s);
 char	*ft_strdup(const char *s);
