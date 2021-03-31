@@ -81,6 +81,7 @@ int	read_more(int fd, char **line, char **save)
 		*line = *save;
 		*save = 0;
 		free(temp);
+		temp = 0;
 		ret = 0;
 	}
 	return (ret);
